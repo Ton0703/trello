@@ -1,10 +1,9 @@
-import { useSelector } from 'react-redux'
+import Header from '../components/Header'
 
 export default function Home() {
-  const name = useSelector(state => state.user.name)
   return (
     <div className="container">
-       {name}
+       <Header />
     </div>
   )
 }
