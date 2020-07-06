@@ -1,11 +1,11 @@
 import * as TYPES from "../types";
 
 const initialState = {
-  name: "",
+  name: "Ton",
   password: "",
 };
 
-export const userReducer = (state = initialState, action) => {
+export default function userReducer(state = initialState, action){
   const { type, payload } = action;
   switch (type) {
     case TYPES.GET_POST:
